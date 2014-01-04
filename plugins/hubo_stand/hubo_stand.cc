@@ -75,7 +75,7 @@ namespace gazebo
 
       this->pid_hpy.Init(250, 0, 0, 0, 0, 25, -25);
       this->pid_hpy.SetCmd(this->hip_target_position_);
-      this->hpy_joint_ = this->model_->GetJoint("HPY");
+      this->hpy_joint_ = this->model_->GetJoint("WST");
 // left leg joints
 
       this->pid_lhy.Init(250, 0, 0.15, 0, 0, 25, -25);
