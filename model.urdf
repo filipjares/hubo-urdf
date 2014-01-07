@@ -27,7 +27,7 @@
   <!-- Robots should have necks, dammit! -->
   <link name="Body_Neck">
     <collision>
-        <geometry>
+      <geometry>
         <mesh filename="package://hubo-urdf/meshes/Body_Neck_col.dae"/>
       </geometry>
     </collision>
