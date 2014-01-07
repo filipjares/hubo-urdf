@@ -26,6 +26,14 @@
   </link>
   <!-- Robots should have necks, dammit! -->
   <link name="Body_Neck">
+    <inertial>
+      <mass value="1e-4"/>
+      <inertia
+            ixx="1e-4" ixy="0" ixz="0"
+            iyy="1e-4" iyz="0"
+            izz="1e-4"/>
+      <origin xyz="0 0 0"/>
+    </inertial>
     <collision>
       <geometry>
         <mesh filename="package://hubo-urdf/meshes/Body_Neck_col.dae"/>
@@ -38,6 +46,14 @@
     </visual>
   </link>
   <link name="Body_Head_Empty">
+    <inertial>
+      <mass value="1e-4"/>
+      <inertia
+            ixx="1e-4" ixy="0" ixz="0"
+            iyy="1e-4" iyz="0"
+            izz="1e-4"/>
+      <origin xyz="0 0 0"/>
+    </inertial>
   </link> 
   <link name="Body_Head">
     <inertial>
