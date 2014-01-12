@@ -1589,83 +1589,108 @@
     <!-- robot model offset -->
     <pose>0 0 1 0 0 0</pose>
   </gazebo>
-  <transmission name="LHY_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="LHY_motor" />
+  <transmission name="LHY_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="LHY" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="LHY_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="LHR_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="LHR_motor" />
+  <transmission name="LHR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="LHR" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="LHR_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="LHP_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="LHP_motor" />
+  <transmission name="LHP_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="LHP" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="LHP_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="LKP_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="LKP_motor" />
+  <transmission name="LKP_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="LKP" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="LKP_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="LAP_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="LAP_motor" />
+  <transmission name="LAP_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="LAP" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="LAP_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="LAR_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="LAR_motor" />
+  <transmission name="LAR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="LAR" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="LAR_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="RHY_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="RHY_motor" />
+  <transmission name="RHY_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="RHY" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="RHY_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-<transmission name="RHR_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="RHR_motor" />
+<transmission name="RHR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="RHR" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="RHR_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="RHP_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="RHP_motor" />
+  <transmission name="RHP_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="RHP" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="RHP_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="RKP_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="RKP_motor" />
+  <transmission name="RKP_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="RKP" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="RKP_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="RAP_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="RAP_motor" />
+  <transmission name="RAP_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="RAP" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="RAP_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <transmission name="RAR_trans" type="pr2_mechanism_model/SimpleTransmission">
-    <actuator name="RAR_motor" />
+  <transmission name="RAR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
     <joint name="RAR" />
-    <mechanicalReduction>1</mechanicalReduction>
-    <motorTorqueConstant>1</motorTorqueConstant>
+    <actuator name="RAR_motor">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
   </transmission>
-  <gazebo>
-<!--    <plugin name="pid_joints" filename="libpid_joints.so" />  -->
-    <plugin name="hubo_stand" filename="libhubo_stand.so" /> 
-<!--    <plugin name="hubo_all" filename="libhubo_all.so" /> -->
 
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/huboplus</robotNamespace>
+    </plugin>
   </gazebo>
 </robot>
 
