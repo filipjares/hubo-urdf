@@ -104,7 +104,8 @@ namespace gazebo
 
 //right leg joints    
  
-      this->pid_rhy.Init(250, 0, 0.1, 0, 0, 25, -25);
+      // pid_lhy and pid_rhy originally had different d_gain values
+      this->pid_rhy.Init(250, 0, 0.15, 0, 0, 25, -25);
       this->pid_rhy.SetCmd(this->target_position_);
       this->rhy_joint_ = this->model_->GetJoint("RHY");
       this->pid_rhr.Init(575, 20, 0, 25, -25, 25, -25);
